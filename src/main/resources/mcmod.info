@@ -1,0 +1,16 @@
+[
+{
+  "modid": "bottomshelf",
+  "name": "GrimCo's Bottom Shelf",
+  "description": "The best drinks you can afford, straight from the Bottom Shelf",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["GrimCo","mallrat208"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

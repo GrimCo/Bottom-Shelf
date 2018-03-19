@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "bottomshelf:items/cocktail_layer0",
+    "layer1": "bottomshelf:items/cocktail_layer1"
+  }
+}
