@@ -1,6 +1,6 @@
 package com.grimco.bottomshelf;
 
-import com.grimco.bottomshelf.common.BSContent;
+import com.grimco.bottomshelf.common.Content;
 import com.grimco.bottomshelf.common.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -31,7 +31,7 @@ public class BottomShelf
 	@EventHandler
 	public void onPreInit(FMLPreInitializationEvent event)
 	{
-		BSLog.onPreInit(event);
+		Log.onPreInit(event);
 		
 		proxy.onPreInit(event);
 	}
@@ -54,7 +54,7 @@ public class BottomShelf
 		@Override
 		public ItemStack getTabIconItem()
 		{
-			return new ItemStack(BSContent.bottleIcon);
+			return new ItemStack(Content.bottleIcon);
 		}
 	};
 }

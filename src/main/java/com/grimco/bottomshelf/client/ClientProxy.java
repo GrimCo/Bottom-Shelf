@@ -1,7 +1,7 @@
 package com.grimco.bottomshelf.client;
 
 import com.grimco.bottomshelf.BottomShelf;
-import com.grimco.bottomshelf.common.BSContent;
+import com.grimco.bottomshelf.common.Content;
 import com.grimco.bottomshelf.common.CommonProxy;
 import com.grimco.bottomshelf.common.items.ItemDrink;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -22,7 +22,7 @@ public class ClientProxy extends CommonProxy
 	@SubscribeEvent
 	public static void onModelRegistryEvent(ModelRegistryEvent event)
 	{
-		for(Item item : BSContent.registeredItems)
+		for(Item item : Content.registeredItems)
 		{
 			
 			ResourceLocation location = item.getRegistryName();
@@ -44,7 +44,7 @@ public class ClientProxy extends CommonProxy
 	
 		ItemColors itemColors = event.getItemColors();
 		
-		for(Item item : BSContent.registeredItems)
+		for(Item item : Content.registeredItems)
 		{
 			if(item instanceof ItemDrink)
 			{
