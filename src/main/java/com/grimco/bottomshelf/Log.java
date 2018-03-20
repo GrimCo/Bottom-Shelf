@@ -3,10 +3,10 @@ package com.grimco.bottomshelf;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
-public class BSLog
+public class Log
 {
 	
-	private static Logger logger;
+	public static Logger logger;
 	
 	public static void onPreInit(FMLPreInitializationEvent event)
 	{

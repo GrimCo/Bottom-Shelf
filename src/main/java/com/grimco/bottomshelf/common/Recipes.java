@@ -1,5 +1,5 @@
 package com.grimco.bottomshelf.common;
 
-public class BSRecipes
+public class Recipes
 {
 }

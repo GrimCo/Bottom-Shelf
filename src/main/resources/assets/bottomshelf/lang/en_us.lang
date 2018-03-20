@@ -1,10 +1,53 @@
 itemGroup.bottomshelf=GrimCo's Bottom Shelf
 
+potion.intoxicated=Intoxicated
+
+potion.potency.3=III
+potion.potency.4=IV
+potion.potency.5=V
+potion.potency.6=VI
+potion.potency.7=VII
+potion.potency.8=VIII
+potion.potency.9=IX
+potion.potency.10=X
+
+//Bottles
+item.bottomshelf.seltzer_water.name=Bottle of Seltzer Water
+item.bottomshelf.seltzer_water.desc=It's got bubbles
 item.bottomshelf.aldebran_whiskey.name=Bottle of Aldebran Whiskey
 item.bottomshelf.aldebran_whiskey.desc=It's... It's Green
-
 item.bottomshelf.janx_spirit.name=Bottle of Janx Spirit
 item.bottomshelf.janx_spirit.desc=That Old Janx Spirit
 
+//Cocktails
 item.bottomshelf.pangalactic_gargle_blaster.name=Pan Galactic Gargle Blaster
 item.bottomshelf.pangalactic_gargle_blaster.desc=Best Drink in Existence
+item.bottomshelf.fizzy_lifting.name=Fizzy Lifting Cocktail
+item.bottomshelf.fizzy_lifting.desc=It can take you higher
+item.bottomshelf.martini.name=Martini
+item.bottomshelf.martini.desc=The elixir of quietude
+item.bottomshelf.martini_dirty.name=Dirty Martini
+item.bottomshelf.martini_dirty.desc=Olive-drab with envy
+item.bottomshelf.dirty_shirley.name=Dirty Shirley
+item.bottomshelf.dirty_shirley.desc=The Temple has been corrupted
+
+//Jugs
+item.bottomshelf.extreme_hills_dew.name=Jug of Extreme Hills Dew
+item.bottomshelf.extreme_hills_dew.desc=It'll tickle yer innards!
+item.bottomshelf.hog_spit.name=Jug of Hog Spit
+item.bottomshelf.hog_spit.desc=Not a Pork Product
+item.bottomshelf.brivari.name=Jug of Brivari
+item.bottomshelf.brivari.desc=Finest drink of the Republic
+
+
+//Shots
+item.bottomshelf.firewater.name=Shot of Firewater
+item.bottomshelf.firewater.desc=Come on, it's not that hot
+item.bottomshelf.roadkill_malt.name=Shot of Roadkill Malt
+item.bottomshelf.roadkill_malt.desc=Carrion Eaters Only
+
+//WINEGLASS
+item.bottomshelf.shaneyat.name=Sha'neyat
+item.bottomshelf.shaneyat.desc=Non Alcoholic, Completely Toxic
+item.bottomshelf.screwdriver.name=Screwdriver
+item.bottomshelf.screwdriver.desc=Not Cordless

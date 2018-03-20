@@ -2,7 +2,7 @@ package com.grimco.bottomshelf.common.items;
 
 import com.google.common.collect.Lists;
 import com.grimco.bottomshelf.BottomShelf;
-import com.grimco.bottomshelf.common.BSContent;
+import com.grimco.bottomshelf.common.Content;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.resources.I18n;
@@ -16,11 +16,9 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemFood;
-import net.minecraft.item.ItemPotion;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.potion.PotionUtils;
 import net.minecraft.stats.StatList;
 import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.Tuple;
@@ -59,7 +57,7 @@ public class ItemDrink extends ItemFood
 		
 		setCreativeTab(BottomShelf.creativeTab);
 		
-		BSContent.registeredItems.add(this);
+		Content.registeredItems.add(this);
 	}
 	
 	@Override
@@ -72,11 +70,6 @@ public class ItemDrink extends ItemFood
 	public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
 	{
 		EntityPlayer entityplayer = entityLiving instanceof EntityPlayer ? (EntityPlayer)entityLiving : null;
-		
-		if (entityplayer == null || !entityplayer.capabilities.isCreativeMode)
-		{
-			stack.shrink(1);
-		}
 		
 		if (entityplayer instanceof EntityPlayerMP)
 		{
@@ -114,6 +107,11 @@ public class ItemDrink extends ItemFood
 			{
 				entityplayer.inventory.addItemStackToInventory(new ItemStack(Items.GLASS_BOTTLE));
 			}
+		}
+		
+		if (entityplayer == null || !entityplayer.capabilities.isCreativeMode)
+		{
+			stack.shrink(1);
 		}
 		
 		return stack;
@@ -254,7 +252,9 @@ public class ItemDrink extends ItemFood
 		SHOT,
 		SHOT_CLOUDY,
 		WINE_GLASS,
-		WINE_GLASS_CLOUDY;
+		WINE_GLASS_CLOUDY,
+		JUG,
+		JUG_CLOUDY;
 		
 		@Override
 		public String getName()
