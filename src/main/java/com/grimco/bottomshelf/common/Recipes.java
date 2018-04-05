@@ -24,7 +24,7 @@ public class Recipes
 	{
 		
 		
-		ItemStack waterBottle = new ItemStack(Items.POTIONITEM);
+		ItemStack waterBottle = PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM),PotionTypes.WATER);
 		ResourceLocation drinks = new ResourceLocation(BottomShelf.MOD_ID, "drinks");
 	
 		event.getRegistry().register(new ShapelessOreRecipe(drinks, Content.bottleAldebranWhiskey, waterBottle, Items.NETHER_WART, Items.SUGAR, Items.SLIME_BALL).setRegistryName("aldebranwhiskey"));
